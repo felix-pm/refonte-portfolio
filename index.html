@@ -1,0 +1,736 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Félix Parendeau Millerioux — Développeur Fullstack</title>
+    <meta
+      name="description"
+      content="Portfolio de Félix Parendeau Millerioux, étudiant en Bachelor Développeur FullStack à CODA Orléans, à la recherche d'une alternance."
+    />
+    <meta name="author" content="Félix Parendeau Millerioux" />
+    <meta name="theme-color" content="#121c3a" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:title" content="Félix Parendeau Millerioux — Développeur Fullstack" />
+    <meta
+      property="og:description"
+      content="Étudiant en Bachelor Développeur FullStack à CODA Orléans, à la recherche d'une alternance."
+    />
+    <meta property="og:url" content="https://felix-pm.fr/" />
+    <meta property="og:image" content="assets/img/felix-portrait.jpg" />
+
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Félix Parendeau Millerioux",
+        "jobTitle": "Étudiant développeur Fullstack",
+        "email": "mailto:felix.parendeau@gmail.com",
+        "url": "https://felix-pm.fr/",
+        "address": { "@type": "PostalAddress", "addressLocality": "Orléans", "addressCountry": "FR" },
+        "alumniOf": { "@type": "EducationalOrganization", "name": "CODA Orléans" },
+        "sameAs": ["https://www.linkedin.com/in/felix-parendeau/", "https://github.com/felix-pm"]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Aller au contenu</a>
+
+    <!-- Barre défilante -->
+    <div class="announce" role="note" aria-label="Annonce">
+      <p class="sr-only">
+        Actuellement à la recherche d'une alternance ! N'hésitez pas à consulter mon CV ou à me
+        contacter pour toute opportunité.
+      </p>
+      <div class="announce__track" aria-hidden="true">
+        <div class="announce__group">
+          <span>Actuellement à la recherche d'une alternance ! N'hésitez pas à consulter mon CV ou à me contacter pour toute opportunité.</span>
+          <span class="announce__sep">//</span>
+          <span>Actuellement à la recherche d'une alternance ! N'hésitez pas à consulter mon CV ou à me contacter pour toute opportunité.</span>
+          <span class="announce__sep">//</span>
+          <span>Actuellement à la recherche d'une alternance ! N'hésitez pas à consulter mon CV ou à me contacter pour toute opportunité.</span>
+          <span class="announce__sep">//</span>
+        </div>
+        <div class="announce__group">
+          <span>Actuellement à la recherche d'une alternance ! N'hésitez pas à consulter mon CV ou à me contacter pour toute opportunité.</span>
+          <span class="announce__sep">//</span>
+          <span>Actuellement à la recherche d'une alternance ! N'hésitez pas à consulter mon CV ou à me contacter pour toute opportunité.</span>
+          <span class="announce__sep">//</span>
+          <span>Actuellement à la recherche d'une alternance ! N'hésitez pas à consulter mon CV ou à me contacter pour toute opportunité.</span>
+          <span class="announce__sep">//</span>
+        </div>
+      </div>
+    </div>
+
+    <header class="site-header" id="header">
+      <div class="container site-header__inner">
+        <a class="brand" href="#accueil">
+          <span class="brand__mark" aria-hidden="true">FP</span>
+          <span class="brand__name">Félix Parendeau<span class="brand__last"> Millerioux</span></span>
+        </a>
+
+        <nav class="nav" aria-label="Navigation principale">
+          <ul class="nav__list">
+            <li>
+              <a class="nav__link" href="#accueil"
+                ><i class="fa-regular fa-user" aria-hidden="true"></i><span>Accueil</span></a
+              >
+            </li>
+            <li>
+              <a class="nav__link" href="#experiences"
+                ><i class="fa-regular fa-file-lines" aria-hidden="true"></i
+                ><span>Expériences</span></a
+              >
+            </li>
+            <li>
+              <a class="nav__link" href="#competences"
+                ><i class="fa-solid fa-bolt-lightning" aria-hidden="true"></i
+                ><span>Compétences</span></a
+              >
+            </li>
+            <li>
+              <a class="nav__link" href="#projets"
+                ><i class="fa-regular fa-lightbulb" aria-hidden="true"></i><span>Projets</span></a
+              >
+            </li>
+            <li>
+              <a class="nav__link" href="#contact"
+                ><i class="fa-regular fa-envelope" aria-hidden="true"></i><span>Contact</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <a href="assets/cv-felix.pdf" class="btn btn--primary btn--sm" download>
+          <i class="fa-solid fa-download" aria-hidden="true"></i>
+          <span><span class="hide-sm">Télécharger mon </span>CV</span>
+        </a>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Accueil -->
+      <section class="hero" id="accueil">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <p class="hero__eyebrow reveal">// Étudiant développeur fullstack</p>
+            <h1 class="hero__title reveal">
+              Félix Parendeau <span class="hero__title-last">Millerioux</span>
+            </h1>
+            <p class="hero__lead reveal">
+              En Bachelor Développeur FullStack à CODA_ Orléans, je conçois des sites et des
+              applications web, de l'interface jusqu'à la base de données.
+            </p>
+
+            <p class="status-pill reveal">
+              <span class="status-pill__dot" aria-hidden="true"></span>
+              En recherche d'alternance
+            </p>
+
+            <ul class="hero__infos reveal" aria-label="Coordonnées">
+              <li>
+                <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                <a href="mailto:felix.parendeau@gmail.com">felix.parendeau@gmail.com</a>
+              </li>
+              <li>
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                <a
+                  href="https://www.linkedin.com/in/felix-parendeau/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >linkedin.com/in/felix-parendeau</a
+                >
+              </li>
+              <li>
+                <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                <a href="tel:+33767403267">07 67 40 32 67</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                <a
+                  href="https://www.google.fr/maps?q=Orl%C3%A9ans,+fr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Orléans, France</a
+                >
+              </li>
+            </ul>
+
+            <div class="hero__actions reveal">
+              <a class="btn btn--primary" href="#projets">
+                Voir mes projets <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+              </a>
+              <a class="btn btn--ghost" href="assets/cv-felix.pdf" download>
+                <i class="fa-solid fa-download" aria-hidden="true"></i> Télécharger mon CV
+              </a>
+            </div>
+          </div>
+
+          <div class="hero__visual reveal">
+            <div class="portrait">
+              <img
+                src="assets/img/felix-portrait.jpg"
+                alt="Portrait de Félix Parendeau Millerioux"
+                width="800"
+                height="1000"
+                fetchpriority="high"
+              />
+            </div>
+            <div class="portrait__badge">
+              <span class="portrait__badge-logo" aria-hidden="true">coda<span>_</span></span>
+              <span class="portrait__badge-text">
+                <strong>Bachelor Développeur FullStack</strong>
+                <span>CODA Orléans · 2025 — 2028</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- À propos -->
+      <section class="section section--surface" id="a-propos">
+        <div class="container about">
+          <div class="about__main">
+            <p class="eyebrow reveal">// À propos</p>
+            <h2 class="section-title reveal">Passionné de code depuis mes 15&nbsp;ans.</h2>
+            <div class="about__text reveal">
+              <p>
+                <strong>Je recherche activement une alternance</strong> pour le début d'année
+                scolaire 2026. Étant
+                <strong>étudiant en première année de Bachelor Développeur FullStack</strong>, je
+                suis un passionné de code depuis mes 15 ans. C'est à cet âge que j'ai réalisé mes
+                premiers sites web, transformant rapidement une simple curiosité en une véritable
+                vocation : j'ai su que je voulais en faire mon métier.
+              </p>
+              <p>
+                J'ai acquis une base logique solide grâce à deux années de spécialisation NSI où
+                j'ai approfondi le développement logiciel backend (Python) tout en découvrant les
+                bases du développement frontend (HTML, CSS). À CODA, l'expertise technique
+                s'accentue : apprentissage des autres langages fondamentaux (JavaScript, PHP et C)
+                et approfondissement des connaissances frontend et design, de mon côté je me lance
+                dans l'apprentissage de frameworks frontend comme Bootstrap ou encore Tailwind.
+                Curieux et rigoureux, j'apprécie la compréhension du code natif tout autant que
+                l'utilisation de frameworks spécialisés.
+              </p>
+            </div>
+          </div>
+
+          <dl class="facts reveal">
+            <div class="fact">
+              <dt><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Formation</dt>
+              <dd>Bachelor Développeur FullStack <span>CODA_ Orléans</span></dd>
+            </div>
+            <div class="fact">
+              <dt><i class="fa-solid fa-briefcase" aria-hidden="true"></i> Recherche</dt>
+              <dd>Alternance <span>Rentrée 2026</span></dd>
+            </div>
+            <div class="fact">
+              <dt><i class="fa-solid fa-language" aria-hidden="true"></i> Langues</dt>
+              <dd>Anglais C1 <span>Espagnol B1</span></dd>
+            </div>
+            <div class="fact">
+              <dt><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Basé à</dt>
+              <dd>Orléans, France <span>Permis de conduire</span></dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <!-- Expériences et formations -->
+      <section class="section" id="experiences">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow reveal">// Parcours</p>
+            <h2 class="section-title reveal">Expériences et formations</h2>
+          </header>
+
+          <div class="journey">
+            <div class="journey__col">
+              <h3 class="journey__title reveal">
+                <span class="icon-square" aria-hidden="true"
+                  ><i class="fa-solid fa-graduation-cap"></i
+                ></span>
+                Formations
+              </h3>
+              <ol class="timeline">
+                <li class="timeline__item reveal">
+                  <article class="t-card">
+                    <div class="t-card__head">
+                      <h4>Bachelor développeur FullStack à CODA_</h4>
+                      <span class="date">2025 — présent</span>
+                    </div>
+                    <p class="t-card__place">CODA Orléans</p>
+                    <p>
+                      Coda Orléans : une école d'informatique privée qui forme des étudiants
+                      engagés jusqu'à bac+3 ou bac+5, grâce à un enseignement moderne et
+                      professionnalisant.
+                    </p>
+                  </article>
+                </li>
+                <li class="timeline__item reveal">
+                  <article class="t-card">
+                    <div class="t-card__head">
+                      <h4>Bac Spécialité NSI et Physique</h4>
+                      <span class="date">2022 — 2025</span>
+                    </div>
+                    <p class="t-card__place">Lycée Voltaire</p>
+                    <p>
+                      Issu d'un parcours général au Lycée Voltaire, j'ai développé une solide
+                      appétence pour l'informatique à travers la spécialité NSI. Cet investissement
+                      m'a permis d'acquérir des compétences techniques concrètes, récompensées par
+                      un 15/20 au Baccalauréat.
+                    </p>
+                  </article>
+                </li>
+              </ol>
+            </div>
+
+            <div class="journey__col">
+              <h3 class="journey__title reveal">
+                <span class="icon-square" aria-hidden="true"
+                  ><i class="fa-solid fa-briefcase"></i
+                ></span>
+                Expérience professionnelle
+              </h3>
+              <ol class="timeline">
+                <li class="timeline__item reveal">
+                  <article class="t-card">
+                    <div class="t-card__head">
+                      <h4>Vendeur polyvalent de restauration</h4>
+                      <span class="date">mars 2025 — présent</span>
+                    </div>
+                    <p class="t-card__place">Relais H café <span class="badge">CDI</span></p>
+                    <p>
+                      Accueil client, préparation de boissons et snacking, encaissement, mise en
+                      rayon et entretien selon les normes d'hygiène et de sécurité, tout en
+                      apportant bonne humeur et dynamisme.
+                    </p>
+                  </article>
+                </li>
+                <li class="timeline__item reveal">
+                  <article class="t-card">
+                    <div class="t-card__head">
+                      <h4>Équipier cuisine — grill</h4>
+                      <span class="date">juillet 2025</span>
+                    </div>
+                    <p class="t-card__place">
+                      McDonald's Lamotte-Beuvron <span class="badge">CDI</span>
+                    </p>
+                    <p>
+                      Préparation des produits, service client et entretien du restaurant selon les
+                      normes d'hygiène.
+                    </p>
+                  </article>
+                </li>
+                <li class="timeline__item reveal">
+                  <article class="t-card">
+                    <div class="t-card__head">
+                      <h4>Agent de nettoyage</h4>
+                      <span class="date">juin — août 2024</span>
+                    </div>
+                    <p class="t-card__place">Center Parcs <span class="badge">CDD</span></p>
+                    <p>
+                      Entretien des cottages et espaces communs dans le respect des normes
+                      d'hygiène, garantissant un environnement propre et accueillant.
+                    </p>
+                  </article>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Compétences -->
+      <section class="section section--surface" id="competences">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow reveal">// Stack</p>
+            <h2 class="section-title reveal">Mes compétences</h2>
+          </header>
+
+          <div class="skills">
+            <article class="skill-card reveal">
+              <header class="skill-card__head">
+                <span class="icon-square" aria-hidden="true"
+                  ><i class="fa-solid fa-palette"></i
+                ></span>
+                <h3>Frontend &amp; Design</h3>
+              </header>
+              <ul class="chips">
+                <li class="chip"><i class="fa-brands fa-html5" aria-hidden="true"></i> HTML5</li>
+                <li class="chip"><i class="fa-brands fa-css3-alt" aria-hidden="true"></i> CSS3</li>
+                <li class="chip"><i class="fa-brands fa-js" aria-hidden="true"></i> JavaScript</li>
+                <li class="chip"><i class="fa-brands fa-figma" aria-hidden="true"></i> Figma</li>
+              </ul>
+            </article>
+
+            <article class="skill-card skill-card--wide reveal">
+              <header class="skill-card__head">
+                <span class="icon-square" aria-hidden="true"
+                  ><i class="fa-solid fa-code"></i
+                ></span>
+                <h3>Backend &amp; Tools</h3>
+              </header>
+              <ul class="chips">
+                <li class="chip"><i class="fa-solid fa-c" aria-hidden="true"></i> C</li>
+                <li class="chip"><i class="fa-brands fa-php" aria-hidden="true"></i> PHP</li>
+                <li class="chip"><i class="fa-brands fa-python" aria-hidden="true"></i> Python</li>
+                <li class="chip"><i class="fa-brands fa-git-alt" aria-hidden="true"></i> Git</li>
+                <li class="chip"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</li>
+                <li class="chip"><i class="fa-brands fa-docker" aria-hidden="true"></i> Docker</li>
+                <li class="chip">
+                  <i class="fa-solid fa-gear" aria-hidden="true"></i> Backoffice / CRUD
+                </li>
+                <li class="chip">
+                  <i class="fa-solid fa-lock" aria-hidden="true"></i> Auth &amp; Sécurité
+                </li>
+              </ul>
+            </article>
+
+            <article class="skill-card reveal">
+              <header class="skill-card__head">
+                <span class="icon-square" aria-hidden="true"
+                  ><i class="fa-solid fa-database"></i
+                ></span>
+                <h3>Base de données</h3>
+              </header>
+              <ul class="chips">
+                <li class="chip"><i class="fa-solid fa-database" aria-hidden="true"></i> SQL</li>
+              </ul>
+            </article>
+
+            <article class="skill-card reveal">
+              <header class="skill-card__head">
+                <span class="icon-square" aria-hidden="true"
+                  ><i class="fa-solid fa-language"></i
+                ></span>
+                <h3>Langues</h3>
+              </header>
+              <ul class="chips">
+                <li class="chip">Anglais <span class="chip__level">C1</span></li>
+                <li class="chip">Espagnol <span class="chip__level">B1</span></li>
+              </ul>
+            </article>
+
+            <article class="skill-card reveal">
+              <header class="skill-card__head">
+                <span class="icon-square" aria-hidden="true"
+                  ><i class="fa-solid fa-people-group"></i
+                ></span>
+                <h3>Soft skills</h3>
+              </header>
+              <ul class="chips chips--soft">
+                <li class="chip">À l'aise à l'oral</li>
+                <li class="chip">Travail en équipe</li>
+                <li class="chip">Négociation</li>
+                <li class="chip">Prise d'initiative</li>
+                <li class="chip">Prise de recul</li>
+                <li class="chip">Gestion du stress</li>
+                <li class="chip">Persévérant</li>
+                <li class="chip">Organisation</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projets -->
+      <section class="section" id="projets">
+        <div class="container">
+          <header class="section-head">
+            <p class="eyebrow reveal">// Réalisations</p>
+            <h2 class="section-title reveal">Mes projets</h2>
+          </header>
+
+          <div class="projects">
+            <article class="project project--featured reveal">
+              <div class="project__media project__media--logo">
+                <img
+                  src="assets/img/projets/ride-team.jpg"
+                  alt="Logo de RideTeam"
+                  width="800"
+                  height="800"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project__body">
+                <p class="project__kicker">01 — Application web · MVC</p>
+                <h3 class="project__title">RideTeam</h3>
+                <p class="project__desc">
+                  Plateforme communautaire de gestion de profils et de balades à moto. Architecture
+                  MVC.
+                </p>
+                <ul class="tags" aria-label="Technologies">
+                  <li>JavaScript</li>
+                  <li>PHP</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>MySQL</li>
+                </ul>
+                <a
+                  href="https://rideteam.felix-pm.fr/rideTeamAll"
+                  class="btn btn--dark btn--sm project__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-solid fa-globe" aria-hidden="true"></i> Site web
+                  <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                </a>
+              </div>
+            </article>
+
+            <article class="project reveal">
+              <div class="project__media">
+                <img
+                  src="assets/img/projets/fair-count.jpg"
+                  alt="Logo de Fair count"
+                  width="1400"
+                  height="764"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project__body">
+                <p class="project__kicker">02 — Application web · Backoffice</p>
+                <h3 class="project__title">Fair count</h3>
+                <p class="project__desc">
+                  Un site web intuitif conçu pour gérer les dépenses de groupe (vacances, sorties
+                  entre amis...).
+                </p>
+                <p class="project__note">
+                  <i class="fa-solid fa-sliders" aria-hidden="true"></i>
+                  <span
+                    ><strong>Backoffice intégré :</strong> gestion complète des dépenses, des
+                    remboursements et l'administration des groupes (CRUD).</span
+                  >
+                </p>
+                <ul class="tags" aria-label="Technologies">
+                  <li>PHP</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>MySQL</li>
+                </ul>
+                <a
+                  href="https://felix-pm45.alwaysdata.net/"
+                  class="btn btn--dark btn--sm project__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-solid fa-globe" aria-hidden="true"></i> Site web
+                  <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                </a>
+              </div>
+            </article>
+
+            <article class="project reveal">
+              <div class="project__media">
+                <img
+                  src="assets/img/projets/the-league.jpg"
+                  alt="Logo de The League"
+                  width="800"
+                  height="533"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project__body">
+                <p class="project__kicker">03 — Site vitrine · Backoffice</p>
+                <h3 class="project__title">The League</h3>
+                <p class="project__desc">
+                  The League est un site vitrine recensant les équipes, joueurs et matchs.
+                </p>
+                <p class="project__note">
+                  <i class="fa-solid fa-sliders" aria-hidden="true"></i>
+                  <span
+                    ><strong>Backoffice intégré :</strong> gestion complète des joueurs, des
+                    résultats de matchs et l'administration des équipes (CRUD).</span
+                  >
+                </p>
+                <ul class="tags" aria-label="Technologies">
+                  <li>PHP</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>MySQL</li>
+                </ul>
+                <a
+                  href="https://felix-pm45.alwaysdata.net/theleague/index.php"
+                  class="btn btn--dark btn--sm project__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-solid fa-globe" aria-hidden="true"></i> Site web
+                  <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                </a>
+              </div>
+            </article>
+
+            <article class="project reveal">
+              <div class="project__media">
+                <img
+                  src="assets/img/projets/boulangerie.jpg"
+                  alt="Vitrine de pâtisseries d'une boulangerie"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project__body">
+                <p class="project__kicker">04 — Site vitrine</p>
+                <h3 class="project__title">Site vitrine d'une boulangerie</h3>
+                <p class="project__desc">
+                  Présentation simple et attractive de la boulangerie, de ses produits et de ses
+                  informations essentielles.
+                </p>
+                <ul class="tags" aria-label="Technologies">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+                <a
+                  href="https://felix-pm.github.io/cafe-orleans/"
+                  class="btn btn--dark btn--sm project__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-solid fa-globe" aria-hidden="true"></i> Site web
+                  <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                </a>
+              </div>
+            </article>
+
+            <article class="project reveal">
+              <div class="project__media project__media--top">
+                <img
+                  src="assets/img/projets/prothesiste-dentaire.jpg"
+                  alt="Prothésiste dentaire au travail"
+                  width="850"
+                  height="1280"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project__body">
+                <p class="project__kicker">05 — Site vitrine</p>
+                <h3 class="project__title">
+                  Site vitrine d'une entreprise de prothésiste dentaire
+                </h3>
+                <p class="project__desc">
+                  Présentation professionnelle de l'entreprise, de son savoir-faire et de ses
+                  services essentiels.
+                </p>
+                <ul class="tags" aria-label="Technologies">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+                <a
+                  href="https://felix-pm.github.io/felix-pm-final/"
+                  class="btn btn--dark btn--sm project__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-solid fa-globe" aria-hidden="true"></i> Site web
+                  <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="contact" id="contact">
+        <div class="container contact__inner">
+          <p class="contact__badge reveal">Contact</p>
+          <h2 class="contact__title reveal">Restons en contact</h2>
+          <p class="contact__text reveal">
+            Vous avez une question, une proposition d'alternance ?<br />
+            Envoyez-moi un mail à :
+          </p>
+
+          <div class="contact__mail reveal">
+            <a href="mailto:felix.parendeau@gmail.com" class="contact__mail-link">
+              <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+              felix.parendeau@gmail.com
+            </a>
+            <button type="button" class="contact__copy" data-copy="felix.parendeau@gmail.com">
+              <i class="fa-regular fa-copy" aria-hidden="true"></i>
+              <span class="contact__copy-label" aria-live="polite">Copier</span>
+              <span class="sr-only">l'adresse e-mail</span>
+            </button>
+          </div>
+
+          <ul class="contact__links reveal">
+            <li>
+              <a
+                class="link-tile"
+                href="https://www.linkedin.com/in/felix-parendeau/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                <span class="link-tile__label">LinkedIn</span>
+                <span class="link-tile__value">in/felix-parendeau</span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="link-tile"
+                href="https://github.com/felix-pm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                <span class="link-tile__label">GitHub</span>
+                <span class="link-tile__value">felix-pm</span>
+              </a>
+            </li>
+            <li>
+              <a class="link-tile" href="tel:+33767403267">
+                <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                <span class="link-tile__label">Téléphone</span>
+                <span class="link-tile__value">07 67 40 32 67</span>
+              </a>
+            </li>
+            <li>
+              <a class="link-tile" href="assets/cv-felix.pdf" download>
+                <i class="fa-regular fa-file-lines" aria-hidden="true"></i>
+                <span class="link-tile__label">Curriculum vitæ</span>
+                <span class="link-tile__value">cv-felix.pdf</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p>© 2026 Félix Parendeau Millerioux</p>
+        <a href="#accueil" class="site-footer__top">
+          Retour en haut <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
