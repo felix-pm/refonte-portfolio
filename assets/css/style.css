@@ -301,9 +301,11 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 12px;
+  flex-shrink: 0;
   color: var(--on-dark);
   font-weight: 700;
   letter-spacing: -0.01em;
+  white-space: nowrap;
 }
 
 .brand__mark {
@@ -363,11 +365,20 @@ button {
 }
 
 /* Navigation flottante en bas sur mobile (comme l'ancienne version) */
-@media (max-width: 979px) {
+/* Le nom complet et les icônes du menu ne tiennent dans l'en-tête qu'à partir de 1180px */
+@media (max-width: 1179px) {
   .brand__last {
     display: none;
   }
+}
 
+@media (min-width: 980px) and (max-width: 1179px) {
+  .nav__link i {
+    display: none;
+  }
+}
+
+@media (max-width: 979px) {
   .nav {
     position: fixed;
     left: 50%;
@@ -567,7 +578,7 @@ button {
 .hero__infos {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 12px 32px;
+  gap: 12px 24px;
   margin-bottom: 36px;
   font-family: var(--font-mono);
   font-size: 0.88rem;
@@ -725,7 +736,7 @@ button {
 @media (min-width: 980px) {
   .hero__inner {
     grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);
-    gap: 64px;
+    gap: clamp(40px, 10vw - 58px, 64px);
     min-height: min(760px, calc(100svh - var(--header-h) - 36px));
   }
 
@@ -738,6 +749,12 @@ button {
 
   .portrait__badge {
     left: -40px;
+  }
+}
+
+@media (min-width: 980px) and (max-width: 1179px) {
+  .portrait__badge {
+    left: -12px;
   }
 }
 
